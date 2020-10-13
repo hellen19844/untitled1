@@ -12,7 +12,13 @@ public class Main {
         System.out.println("\n Сотрудники старше 40: \n");
 
         for (int i = 0; i < employeesArray.length; i++) {
-            employeesArray[i].setAge();
+            if (employeesArray[i].getAge()>40){
+                employeesArray[i].infoFullName();
+                System.out.println(" ");
+                employeesArray[i].contacts();
+                employeesArray[i].otherDate();
+                System.out.println("\n");
+            }
         }
 
     }

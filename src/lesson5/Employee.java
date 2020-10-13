@@ -32,13 +32,9 @@ public class Employee {
         System.out.println("Другая информация: " + position + " (должность), " + salary + " руб. (зарплата), " + age + " (возраст)");
     }
 
-    public void setAge() {
-        if (age > 40) {
-            infoFullName();
-            contacts();
-            otherDate();
-            System.out.println("\n");
+    int getAge() {
+        return age;
         }
     }
 
-}
+
